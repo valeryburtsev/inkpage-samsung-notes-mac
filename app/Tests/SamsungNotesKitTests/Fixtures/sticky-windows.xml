@@ -1,0 +1,48 @@
+<CompareNoteView><noteResource createdTime="1791816511071692" id="9dc0efb2-f2f7-4ad0-9366-23d84625cc32" isEncrypted="false" isLocked="false" ownerId="" syncModifiedTime="1791816557903" xmlVer="2"><noteTree ver="5500"><pageList><page h="7822d5beefc391cc18be9423a47e8b69d7a6ed030531f4b9d902eaad8307b37a" id="f9d67cb2-c64b-11f1-b569-9b1756dd88e3" t="1791816557913103"><layerList><layer h="da0fff99125327f3354e0681499da429135dad5cc01cf6b7363ae82c0c835887" id="f9d67dac-c64b-11f1-a41f-7b335740df4a" t="1791816511067798"/></layerList></page><page h="3c81d759761f0d5358f27678f7900aa448ff9b473e08912d487391581f38163c" id="f9d6855e-c64b-11f1-9f31-33d4096fe6de" t="1791816511071006"><layerList><layer h="701aa5baab5e2eae30dde6277b23f39a69f7ae15f91cc3b7fcfd360db045549b" id="f9d68586-c64b-11f1-b999-83adc8a080cf" t="1791816511070717"/></layerList></page></pageList><contentFileList><contentFile h="bc9e1d4eb277864abf59ee54902e480f110daf5a65f3d0f39db170e8d5d0f61e" id="4054004f50105b0072afb65301cc4008842e397c491875116e45975dc8d123ca" t="1791816557868809"/></contentFileList><bodyText h="090590aa53e7815a5318d9b7f96b116cb3f03cafde72bc93c81913c6f0e45a25" id="f9d0bdae-c64b-11f1-8564-e7837441d98b" t="1791816544824766"/></noteTree><contentFileList><contentFile bindNumber="6" createdTime="0" hash="bc9e1d4eb277864abf59ee54902e480f110daf5a65f3d0f39db170e8d5d0f61e" id="4054004f50105b0072afb65301cc4008842e397c491875116e45975dc8d123ca" isFileAttached="True" modifiedTime="1791816557868809" name="NkBzdGlja3ltZW1vXzIwMjYtMTAtMTJfMTVfNDhfMzMuc2RvY3g=" refCount="1">
+      <fileHash>4054004f50105b0072afb65301cc4008842e397c491875116e45975dc8d123ca</fileHash>
+    </contentFile></contentFileList><attributes bodyTextFontSizeDelta="0" bookmark="[]" displayCreatedTime="1791816511145" displayModifiedTime="1791816557903" documentType="0" editTime="0" editableFormatVersion="4000" fileRevision="1" fixedBackgroundTheme="2" fixedFont="" fixedTextDirection="2" formatVersion="5303" height="3356" isBgColorInverted="True" isConverted="False" isFavorite="False" lastEditedPageImageId="-1" lastEditedPageIndex="0" lastEditedPageTime="0" lastRecognizedDataModifiedTime="0" mappedAt="0" mappedUuid="" minFormatVersion="5303" modifiedTime="1791816557913830" msLastSyncTime="0" msSyncAccountId="" msSyncDocumentId="" orientation="0" ownerId="" pageDefaultHeight="1674" pageDefaultWidth="1183" pageHorizontalPadding="0" pageMode="0" pageVerticalPadding="8" state="normal" tapeVisibility="True" width="1183">
+    <title>
+      <object bottomMargin="0" clippable="True" createdTime="0" ellipsisType="2" flippable="True" formatVersion="4000" hash="b14dcc198a560ec0203945ce67f6076b38a1508f097a3fd10f87a8fdb9cc906c" haveBeenToAtt="True" id="f9d0aa44-c64b-11f1-974a-0f5cf01b5aca" isHintTextVisible="False" isHorizontalFlipped="False" isReplayable="True" isTemplateObject="False" isTextEditable="True" isTextReadOnly="False" isTransparency="False" isVerticalFlipped="False" leftMargin="11.25" lockState="False" modifiedTime="1791816511072033" movable="True" originalDegree="0" removable="True" resizable="0" rightMargin="11.25" rotatable="True" selectable="True" shapeType="4" textGravity="0" timeStamp="0" topMargin="0" type="textBox" visible="True">
+        <rect b="0" l="0" r="0" t="0"/>
+        <lineColorEffect angle="0" colorType="2" gradientRotatable="False" gradientType="0" solidColor="-16777216">
+          <radialGradientPosition x="0" y="0"/>
+        </lineColorEffect>
+        <lineStyleEffect beginArrowSize="0" beginArrowType="0" capType="0" compoundType="0" dashType="0" endArrowSize="0" endArrowType="0" joinType="0" width="0"/>
+        <originalRect b="0" l="0" r="0" t="0"/>
+        <spanOrderDataList>
+          <spanOrderData val="MSwwLDE2LDEsLTE0MzQyODc1"/>
+        </spanOrderDataList>
+        <text>PD9hICdzcGFuL2ZvcmVncm91bmRDb2xvcic9JzEsLTE0MzQyODc1JyAncGFyYWdyYXBoL3BhcnNpbmdTdGF0ZSc9J0ZhbHNlJz8+VTNScFkydDVJRzV2ZEdVZ2RHVnpkQT09PD9hICdzcGFuL2ZvcmVncm91bmRDb2xvcicgJ3BhcmFncmFwaC9wYXJzaW5nU3RhdGUnPz4=</text>
+      </object>
+    </title>
+  </attributes><pageList><page bgColor="-197380" bgImageMode="2" bgWidth="1183" createdTime="0" currentLayerIndex="0" editableFormatVersion="4000" formatVersion="5303" hash="7822d5beefc391cc18be9423a47e8b69d7a6ed030531f4b9d902eaad8307b37a" height="1674" id="f9d67cb2-c64b-11f1-b569-9b1756dd88e3" isTextOnly="False" minFormatVersion="5303" modifiedTime="1791816557913103" offsetX="0" offsetY="0" orientation="0" width="1183">
+      <customObjectList>
+        <customObject id="ff97f23e-c64b-11f1-bb14-8fb1e67e33a3" type="1">
+          <attachedFileList>
+            <pair key="Y29fYXR0YWNoX2ZpbGU=" value="4054004f50105b0072afb65301cc4008842e397c491875116e45975dc8d123ca"/>
+          </attachedFileList>
+          <customDataList>
+            <pair key="c2tuX2NvbGxhcHNlX3JlY3Q=" value="NTMxLjg0OTk3NiwzMDUuMCw1OTEuMCwzNjQuMTQ5OTk0"/>
+            <pair key="c2tuX2JnX2NvbG9y" value="LTY0ODI="/>
+          </customDataList>
+          <rect b="364.149994" l="531.849976" r="591" t="305"/>
+        </customObject>
+      </customObjectList>
+    <layerList><layer createdTime="0" flagEventForwardable="True" hash="da0fff99125327f3354e0681499da429135dad5cc01cf6b7363ae82c0c835887" id="f9d67dac-c64b-11f1-a41f-7b335740df4a" layerNumber="0" lockState="False" modifiedTime="1791816511067798" thumbnail="-1" visible="True"><objectList/></layer></layerList></page><page bgColor="-197380" bgImageMode="2" bgWidth="1183" createdTime="0" currentLayerIndex="0" editableFormatVersion="4000" formatVersion="4000" hash="3c81d759761f0d5358f27678f7900aa448ff9b473e08912d487391581f38163c" height="1674" id="f9d6855e-c64b-11f1-9f31-33d4096fe6de" isTextOnly="False" minFormatVersion="4000" modifiedTime="1791816511071006" offsetX="0" offsetY="0" orientation="0" width="1183">
+      
+    <layerList><layer createdTime="0" flagEventForwardable="True" hash="701aa5baab5e2eae30dde6277b23f39a69f7ae15f91cc3b7fcfd360db045549b" id="f9d68586-c64b-11f1-b999-83adc8a080cf" layerNumber="0" lockState="False" modifiedTime="1791816511070717" thumbnail="-1" visible="True"><objectList/></layer></layerList></page></pageList><floatingObjectList/><bodyText id="f9d0bdae-c64b-11f1-8564-e7837441d98b">
+    <object bottomMargin="10" clippable="True" createdTime="0" ellipsisType="2" flippable="True" formatVersion="4000" hash="090590aa53e7815a5318d9b7f96b116cb3f03cafde72bc93c81913c6f0e45a25" haveBeenToAtt="True" id="f9d0bdae-c64b-11f1-8564-e7837441d98b" isHintTextVisible="False" isHorizontalFlipped="False" isReplayable="True" isTemplateObject="False" isTextEditable="True" isTextReadOnly="False" isTransparency="False" isVerticalFlipped="False" leftMargin="16" lockState="False" modifiedTime="1791816544824766" movable="True" originalDegree="0" removable="True" resizable="0" rightMargin="16" rotatable="True" selectable="True" shapeType="4" textGravity="0" timeStamp="0" topMargin="10" type="textBox" visible="True">
+      <rect b="0" l="0" r="0" t="0"/>
+      <lineColorEffect angle="0" colorType="2" gradientRotatable="False" gradientType="0" solidColor="-16777216">
+        <radialGradientPosition x="0" y="0"/>
+      </lineColorEffect>
+      <lineStyleEffect beginArrowSize="0" beginArrowType="0" capType="0" compoundType="0" dashType="0" endArrowSize="0" endArrowType="0" joinType="0" width="0"/>
+      <originalRect b="0" l="0" r="0" t="0"/>
+      <spanOrderDataList>
+        <spanOrderData val="MSwwLDQsMSwtMTQzNDI4NzU="/>
+        <spanOrderData val="MTcsMCw0LDEsMA=="/>
+        <spanOrderData val="MywwLDQsMSwxMg=="/>
+      </spanOrderDataList>
+      <text>PD9hICdwYXJhZ3JhcGgvYWxpZ25tZW50Jz0nMCcgJ3BhcmFncmFwaC9hbGlnbm1lbnQnICdwYXJhZ3JhcGgvcGFyc2luZ1N0YXRlJz0nRmFsc2UnICdwYXJhZ3JhcGgvcGFyc2luZ1N0YXRlJyAnc3Bhbi9mb250U2l6ZSc9JzEsMTInICdzcGFuL2ZvcmVncm91bmRDb2xvcic9JzEsLTE0MzQyODc1JyAnc3Bhbi9iYWNrZ3JvdW5kQ29sb3InPScxLDAnICdwYXJhZ3JhcGgvcGFyc2luZ1N0YXRlJz0nRmFsc2UnICdzZWN0aW9uRGF0YS9zZWN0aW9uRGF0YSc9JzQnPz5DZz09PD9hICdwYXJhZ3JhcGgvcGFyc2luZ1N0YXRlJyAncGFyYWdyYXBoL3BhcnNpbmdTdGF0ZSc9J0ZhbHNlJz8+Q2c9PTw/YSAncGFyYWdyYXBoL3BhcnNpbmdTdGF0ZScgJ3BhcmFncmFwaC9wYXJzaW5nU3RhdGUnPSdGYWxzZSc/PkNnPT08P2EgJ3BhcmFncmFwaC9wYXJzaW5nU3RhdGUnICdwYXJhZ3JhcGgvcGFyc2luZ1N0YXRlJz0nRmFsc2UnPz5DZz09PD9hICdzcGFuL2ZvcmVncm91bmRDb2xvcicgJ3NwYW4vYmFja2dyb3VuZENvbG9yJyAnc3Bhbi9mb250U2l6ZScgJ3BhcmFncmFwaC9wYXJzaW5nU3RhdGUnICdzZWN0aW9uRGF0YS9zZWN0aW9uRGF0YSc/Pjw/YSAnc2VjdGlvbkRhdGEvc2VjdGlvbkRhdGEnPScwJyAnc2VjdGlvbkRhdGEvc2VjdGlvbkRhdGEnPz4=</text>
+    </object>
+  </bodyText></noteResource><commitId>179181655790318e91809e8a362b2</commitId><modelName>V2luZG93cyBQQw==</modelName></CompareNoteView>
