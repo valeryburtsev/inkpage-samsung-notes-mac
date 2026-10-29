@@ -93,20 +93,37 @@ struct RootView: View {
     @Environment(\.openWindow) private var openWindow
 
     /// The folders at the side make way for a note that is opened, and come back with the list
-    /// of notes if they were there before.
-    @State private var columns = NavigationSplitViewVisibility.automatic
-    @State private var columnsBeforeNote: NavigationSplitViewVisibility?
+    /// of notes if they were there before. What shows follows from whether a note is open, in the
+    /// same frame: set a step later, the list showed for a frame without them and then jumped.
+    /// Beside a note they can be shown by hand, for that visit only.
+    @State private var noteColumns = NavigationSplitViewVisibility.detailOnly
     /// Whether the folders were put away beside the list of notes.
     @AppStorage("foldersHiddenInList") private var foldersHidden = false
     private var listColumns: NavigationSplitViewVisibility { foldersHidden && Launch.value("--window-snapshot") == nil && Launch.value("--editor-check") == nil ? .detailOnly : .all }
 
     var body: some View {
         @Bindable var model = model
-        NavigationSplitView(columnVisibility: $columns) {
+        let columns = Binding<NavigationSplitViewVisibility>(get: { model.path.isEmpty ? listColumns : noteColumns }, set: { chosen in
+            if model.path.isEmpty {
+                // Showing or hiding the folders beside the list is remembered.
+                if chosen != .automatic { foldersHidden = chosen == .detailOnly }
+            } else {
+                noteColumns = chosen
+            }
+        })
+        NavigationSplitView(columnVisibility: columns) {
             SidebarView()
                 .navigationSplitViewColumnWidth(min: 220, ideal: 260, max: 340)
         } detail: {
-            NavigationStack(path: $model.path) {
+            // Without the stack's own slide: the note and the list change places in one step, with
+            // the folders, instead of one sliding while the other moves after it.
+            NavigationStack(path: Binding(get: { model.path }, set: { path in
+                var quiet = Transaction()
+                quiet.disablesAnimations = true
+                // The window's back button: crossfaded, as every way back to the list is.
+                if path.isEmpty, !model.path.isEmpty { WindowCover.crossfade(WindowCover.notesWindow) { withTransaction(quiet) { model.path = path } } }
+                else { withTransaction(quiet) { model.path = path } }
+            })) {
                 NotesGridView(section: model.section ?? .all)
                     .navigationDestination(for: String.self) { NoteView(noteID: $0) }
             }
@@ -114,22 +131,8 @@ struct RootView: View {
         .sheet(isPresented: $model.showSignIn) { SignInView() }
         .sheet(isPresented: $model.showConflicts) { ConflictSheet() }
         .modifier(WindowUndo())
-        .onChange(of: model.path.isEmpty, initial: true) {
-            if !model.path.isEmpty {
-                if columnsBeforeNote == nil { columnsBeforeNote = listColumns }
-                withAnimation(.easeOut(duration: 0.2)) { columns = .detailOnly }
-            } else {
-                // With the list of notes the folders are there, unless they were put away by
-                // hand: never left hidden just because the app was last quit inside a note.
-                columnsBeforeNote = nil
-                withAnimation(.easeOut(duration: 0.2)) { columns = listColumns }
-            }
-        }
-        .onChange(of: columns) {
-            // Showing or hiding the folders beside the list is remembered; beside a note it is for that note only.
-            guard model.path.isEmpty, columnsBeforeNote == nil, columns != .automatic else { return }
-            foldersHidden = columns == .detailOnly
-        }
+        // The next note opens without the folders again, whatever was done beside this one.
+        .onChange(of: model.path.isEmpty) { if model.path.isEmpty { noteColumns = .detailOnly } }
         .onAppear {
             model.showSettingsWindow = { openSettings() }
             model.showNoteWindow = { openWindow(id: "note", value: $0) }

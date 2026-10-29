@@ -11,6 +11,15 @@ struct NoteView: View {
     @Environment(\.undoManager) private var undoManager
     let noteID: String
     @State private var session: NoteSession?
+    /// The session made ready before the note was shown is taken over, not read again.
+    @State private var adopted = false
+
+    init(noteID: String) {
+        self.noteID = noteID
+        let ready = NoteSession.ready.removeValue(forKey: noteID)
+        _session = State(initialValue: ready)
+        _adopted = State(initialValue: ready != nil)
+    }
 
     var body: some View {
         let record = model.library.notes[noteID]
@@ -22,6 +31,12 @@ struct NoteView: View {
             }
         }
         .task(id: noteID) {
+            if adopted, let ready = session, ready.noteID == noteID {
+                adopted = false
+                ready.undoManager = undoManager
+                model.registerFlush(ready.flushKey) { [weak ready] in ready?.flush() }
+                return
+            }
             if let old = session {
                 old.close()
                 model.unregisterFlush(old.flushKey)
@@ -1307,7 +1322,45 @@ struct PageView: View {
     var text = true
     @Environment(\.displayScale) private var displayScale
     @State private var image: CGImage?
-    @State private var drawnWidth = 0
+    @State private var drawnPixels = 0
+    /// How many times this view has drawn its page: only a redraw for a new size waits a moment.
+    @State private var draws = 0
+
+    init(note: LoadedNote, images: NoteImages, index: Int, width: Double, dark: Bool, revision: Int = 0, text: Bool = true) {
+        self.note = note; self.images = images; self.index = index; self.width = width; self.dark = dark; self.revision = revision; self.text = text
+        // The page as it was last drawn, at about this size: shown at once, while it is drawn anew if need be.
+        let kept = PageView.kept.object(forKey: PageView.key(note, index, dark: dark, revision: revision, text: text, small: width < 300))
+        _image = State(initialValue: kept?.image)
+        _drawnPixels = State(initialValue: kept?.pixels ?? 0)
+    }
+
+    final class Kept {
+        let image: CGImage
+        let pixels: Int
+        init(_ image: CGImage, pixels: Int) { self.image = image; self.pixels = pixels }
+    }
+    static let kept: NSCache<NSString, Kept> = {
+        let cache = NSCache<NSString, Kept>()
+        cache.countLimit = 80
+        return cache
+    }()
+
+    static func key(_ note: LoadedNote, _ index: Int, dark: Bool, revision: Int, text: Bool, small: Bool) -> NSString {
+        "\(note.directory.path)|\(index)|\(dark)|\(revision)|\(text)|\(small)" as NSString
+    }
+
+    /// Draws a note's first pages ahead of showing it, so that they are there in its first frame.
+    static func drawAhead(_ note: LoadedNote, images: NoteImages, pages: Range<Int>, revisions: [Int], pixels: Int, dark: Bool) async {
+        await withTaskGroup(of: Void.self) { group in
+            for index in pages {
+                let revision = revisions[safe: index] ?? 0
+                group.addTask {
+                    guard let drawn = NoteRenderer.pageImage(note, page: index, pixelWidth: pixels, dark: dark, body: false, images: { images.image($0) }) else { return }
+                    await MainActor.run { PageView.kept.setObject(Kept(drawn, pixels: pixels), forKey: PageView.key(note, index, dark: dark, revision: revision, text: false, small: false)) }
+                }
+            }
+        }
+    }
 
     var body: some View {
         ZStack {
@@ -1319,16 +1372,22 @@ struct PageView: View {
         .clipShape(.rect(cornerRadius: 3))
         .shadow(color: .black.opacity(dark ? 0.5 : 0.14), radius: 10, y: 3)
         .task(id: "\(Int(width))|\(dark)|\(displayScale)|\(revision)|\(text)") {
-            // A short pause, so that dragging the window's edge does not redraw for every size on the way.
-            if image != nil, drawnWidth != Int(width) { try? await Task.sleep(for: .milliseconds(140)) }
-            guard !Task.isCancelled else { return }
-            drawnWidth = Int(width)
             let pixels = Int(width * displayScale)
+            // Already drawn at this size: nothing to do.
+            if image != nil, drawnPixels == pixels { return }
+            // A short pause, so that dragging the window's edge does not redraw for every size on the way.
+            if image != nil, draws > 0 { try? await Task.sleep(for: .milliseconds(140)) }
+            guard !Task.isCancelled else { return }
             let note = note, images = images, index = index, dark = dark, text = text
             let rendered = await Task.detached(priority: .userInitiated) {
                 NoteRenderer.pageImage(note, page: index, pixelWidth: pixels, dark: dark, body: text) { images.image($0) }
             }.value
-            if !Task.isCancelled, let rendered { image = rendered }
+            if !Task.isCancelled, let rendered {
+                image = rendered
+                drawnPixels = pixels
+                draws += 1
+                PageView.kept.setObject(Kept(rendered, pixels: pixels), forKey: PageView.key(note, index, dark: dark, revision: revision, text: text, small: width < 300))
+            }
         }
     }
 }

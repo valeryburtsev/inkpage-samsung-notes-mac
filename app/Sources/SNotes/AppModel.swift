@@ -627,12 +627,40 @@ final class AppModel {
         if handwritten { openForDrawing = id }
         clearSelection()
         showMainWindow?()
-        path = [id]
+        // Read first and shown whole, as any note that is opened.
+        open(id)
+    }
+
+    @ObservationIgnored private var opening: Task<Void, Never>?
+
+    /// Opens a note from the list: it is read and its first pages drawn first, and then shown,
+    /// whole, in one step, instead of appearing in pieces.
+    /// Back to the list of notes, crossfaded as opening a note is.
+    func showList() {
+        guard !path.isEmpty else { return }
+        WindowCover.crossfade(WindowCover.notesWindow) { path = [] }
     }
 
     func open(_ id: String) {
-        guard library.notes[id] != nil else { return }
-        path = [id]
+        guard library.notes[id] != nil, path != [id] else { return }
+        opening?.cancel()
+        opening = Task { @MainActor [weak self] in
+            guard let self else { return }
+            let session = NoteSession(noteID: id, model: self)
+            await session.load(text: true)
+            if let note = session.note, let images = session.images {
+                let window = NSApp.keyWindow ?? NSApp.mainWindow
+                // The pages' width once the folders have made way: as the note view works it out.
+                let width = max(min((window?.contentView?.bounds.width ?? 1180) - 150, 720), 320)
+                let scale = window?.backingScaleFactor ?? 2
+                let dark = (self.appearance.scheme.map { $0 == .dark }) ?? (NSApp.effectiveAppearance.bestMatch(from: [.darkAqua, .aqua]) == .darkAqua)
+                let shown = min(session.visiblePages, 2)
+                await PageView.drawAhead(note, images: images, pages: 0..<shown, revisions: session.pageRevisions, pixels: Int(width * scale), dark: dark)
+            }
+            guard !Task.isCancelled, self.library.notes[id] != nil else { session.close(); return }
+            NoteSession.ready[id] = session
+            WindowCover.crossfade(WindowCover.notesWindow) { self.path = [id] }
+        }
     }
 
     func saveText(_ id: String, title: String, body: String) {

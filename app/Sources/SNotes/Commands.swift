@@ -55,7 +55,7 @@ struct AppCommands: Commands {
             .disabled((windowNote == nil && model.path.isEmpty) || !model.writesWithAI)
             Button("Search All Notes") {
                 model.showMainWindow?()
-                model.path = []
+                model.showList()
                 model.searchRequests += 1
             }
             .keyboardShortcut("f", modifiers: [.command, .option])
@@ -137,7 +137,7 @@ private struct GoItems: View {
     let model: AppModel
 
     var body: some View {
-        Button("Back to Notes") { model.path = [] }
+        Button("Back to Notes") { model.showList() }
             .keyboardShortcut("[", modifiers: .command)
             .disabled(model.path.isEmpty)
         Divider()
@@ -153,7 +153,7 @@ private struct GoItems: View {
 
     private func go(_ section: SidebarSection) {
         model.showMainWindow?()
-        model.path = []
+        model.showList()
         model.section = section
     }
 }

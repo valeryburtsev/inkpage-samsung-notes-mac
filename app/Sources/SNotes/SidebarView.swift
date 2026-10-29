@@ -10,7 +10,7 @@ struct SidebarView: View {
         let top = model.folders(in: TreeNode.rootID)
         List(selection: Binding(get: { model.section }, set: { new in
             guard let new else { return }
-            model.path = []
+            model.showList()
             model.section = new
         })) {
             Section {

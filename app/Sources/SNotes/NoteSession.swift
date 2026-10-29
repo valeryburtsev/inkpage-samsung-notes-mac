@@ -144,6 +144,9 @@ final class NoteSession {
     @ObservationIgnored private var loading = false
     @ObservationIgnored private var reloadText: Bool?
 
+    /// Sessions read before their note is shown, waiting for its view to take them over.
+    static var ready: [String: NoteSession] = [:]
+
     /// The open sessions by note id, for the scripted checks.
     static let live = NSMapTable<NSString, NoteSession>(keyOptions: .strongMemory, valueOptions: .weakMemory)
 

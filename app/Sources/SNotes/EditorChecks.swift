@@ -292,6 +292,11 @@ enum EditorChecks {
                 finish(folder)
                 return
             }
+            if Launch.flag("--transition-only") {
+                await transitionFrames(model: model, to: folder)
+                finish(folder)
+                return
+            }
             if Launch.flag("--readme-only") {
                 await readmeShots(model: model, shot: { name in await shot(name, wait: 600) })
                 finish(folder)
