@@ -1,0 +1,72 @@
+--kgmbsjjcad
+Content-Type: application/xml; charset=utf-8
+Content-Disposition: form-data; name=noteResource
+
+<NoteResource id="de41767d-cf03-4b34-a272-e552a0b23f27" syncModifiedTime="1791678800897" createdTime="1791678780787370" isLocked="False" isEncrypted="False" ownerId="" xmlVer="2">
+  <noteTree ver="4000">
+    <pageList>
+      <page id="2b459acc-c50b-11f1-85aa-6fb1e6a75ae9" t="1791678780785042" h="ce107be0ec2b242306dfdec26124dac9080e264a0727411c722c936cd1d22318">
+        <layerList>
+          <layer id="2b459b4e-c50b-11f1-acd6-d3c7a10704ac" t="1791678780784903" h="49259c627f660c3600ff0abf848151b84fbcba4a921accbd567369921d5574b2" />
+        </layerList>
+      </page>
+      <page id="2b45a170-c50b-11f1-8e1c-2349f5321f07" t="1791678780786682" h="bdfdb7536502f7c9d0797593e6e6011ad319926c26424cb90a664d6b9e21df9a">
+        <layerList>
+          <layer id="2b45a198-c50b-11f1-bce5-2bfba7fc8a5e" t="1791678780786554" h="380678ed0979f38d1110db8781ffd6ccad441d92af87f277f73920e66537a9ee" />
+        </layerList>
+      </page>
+    </pageList>
+    <contentFileList>
+      <contentFile id="4194cf35d03ebec5af1e22c78412dcb9d52db90f006405d9626c0878c181da64" t="1791678799843370" h="e8bb24851c900dcc355a108fe01b29cf318b392c5c091abf81f6938424e74ff1" />
+      <contentFile id="9ed308055102c39f02c794a6b05ca63a6d2715dda5ebcd50336779cc277694c8" t="1791678770627291" h="272f8232117c0fbbbfee025089cf4edb394092d91cc79ef80c36f918829721e8" />
+      <contentFile id="f086c4020575f57806aab80862f85cea22166fc7f30cc2acce45434298570a44" t="1791678799825404" h="7cf7c5b6750db3e374f440b4b829028aaa634ad58da6d3de5b4a3be2d487fe45" />
+    </contentFileList>
+    <floatingObjectList>
+      <object id="4a3deb78-c50b-11f1-a335-8f1f85ec7632" t="1791678780787698" h="aeecae1d51b8011401db222857024f00a257518db37edaf1085f5c6401c72aba" />
+      <object id="5ba6355a-c50b-11f1-b432-f7faf07f34cc" t="1791678800776368" h="0bc27bf0a8b009bff59cae725047685e34b75ea98d71934c53dd098be4688e52" />
+    </floatingObjectList>
+    <bodyText id="2b41f4d0-c50b-11f1-a722-1bc5ffa5b6e5" t="1791678800776354" h="02a3878876cefc9996ac43546840c204382c27ec1001d30b92aedc12c5c2cb5b" />
+  </noteTree>
+  <contentFileList>
+    <contentFile id="4194cf35d03ebec5af1e22c78412dcb9d52db90f006405d9626c0878c181da64" bindNumber="2" name="MkA2MzkyNzI3OTE5OTYwMjIyNDYuc3Bw" refCount="1" createdTime="0" modifiedTime="1791678799843370" hash="e8bb24851c900dcc355a108fe01b29cf318b392c5c091abf81f6938424e74ff1" isFileAttached="True">
+      <fileHash>4194cf35d03ebec5af1e22c78412dcb9d52db90f006405d9626c0878c181da64</fileHash>
+    </contentFile>
+    <contentFile id="f086c4020575f57806aab80862f85cea22166fc7f30cc2acce45434298570a44" bindNumber="1" name="MUA2MzkyNzI3OTE5OTYwMjIyNDYucG5n" refCount="1" createdTime="0" modifiedTime="1791678799825404" hash="7cf7c5b6750db3e374f440b4b829028aaa634ad58da6d3de5b4a3be2d487fe45" isFileAttached="True">
+      <fileHash>f086c4020575f57806aab80862f85cea22166fc7f30cc2acce45434298570a44</fileHash>
+    </contentFile>
+  </contentFileList>
+  <attributes isBgColorInverted="True" tapeVisibility="True" formatVersion="4000" fileRevision="1" modifiedTime="1791678800775779" editTime="0" width="848" height="2408" pageHorizontalPadding="0" pageVerticalPadding="8" pageDefaultWidth="848" pageDefaultHeight="1200" minFormatVersion="4000" editableFormatVersion="4000" lastEditedPageIndex="0" lastEditedPageImageId="-1" lastEditedPageTime="0" bodyTextFontSizeDelta="0" orientation="0" pageMode="0" documentType="0" ownerId="" lastRecognizedDataModifiedTime="0" fixedFont="" fixedTextDirection="2" fixedBackgroundTheme="2" isFavorite="False" state="normal" bookmark="[]" mappedUuid="" mappedAt="0" isConverted="False" displayCreatedTime="1791678780905" displayModifiedTime="1791678800897" msSyncAccountId="" msSyncDocumentId="" msLastSyncTime="0">
+    <title>
+      <object type="textBox" id="2b41f19c-c50b-11f1-b607-17632bcb993a" hash="7af72d93f5f49f6a3fc09c0b645abfa40a6ce9e8d1d84b8c59e103e0071f5741" formatVersion="4000" rotatable="True" selectable="True" movable="True" flippable="True" visible="True" isReplayable="True" clippable="True" isTemplateObject="False" timeStamp="0" resizable="0" haveBeenToAtt="True" lockState="False" createdTime="0" modifiedTime="1791678780787535" removable="True" isHorizontalFlipped="False" isVerticalFlipped="False" isHintTextVisible="False" isTextReadOnly="False" isTextEditable="True" isTransparency="False" shapeType="4" originalDegree="0" leftMargin="11.25" topMargin="0" rightMargin="11.25" bottomMargin="0" textGravity="0" ellipsisType="2">
+        <rect l="0" t="0" r="0" b="0" />
+        <lineColorEffect colorType="2" gradientRotatable="False" solidColor="-16777216" gradientType="0" angle="0">
+          <radialGradientPosition x="0" y="0" />
+        </lineColorEffect>
+        <lineStyleEffect width="0" compoundType="0" dashType="0" capType="0" joinType="0" beginArrowType="0" beginArrowSize="0" endArrowType="0" endArrowSize="0" />
+        <originalRect l="0" t="0" r="0" b="0" />
+      </object>
+    </title>
+  </attributes>
+  <floatingObjectList>
+    <object type="painting" id="5ba6355a-c50b-11f1-b432-f7faf07f34cc" hash="0bc27bf0a8b009bff59cae725047685e34b75ea98d71934c53dd098be4688e52" formatVersion="4000" rotatable="True" selectable="True" movable="True" flippable="True" visible="True" isReplayable="True" clippable="True" isTemplateObject="False" timeStamp="0" resizable="0" haveBeenToAtt="True" lockState="False" createdTime="0" modifiedTime="1791678800776368" appendTime="1791678799823723" ownerPageWidth="848" ownerPageHeight="0" layoutType="3" removable="True" pageIndex="0" attachFile="4194cf35d03ebec5af1e22c78412dcb9d52db90f006405d9626c0878c181da64" thumbnailFile="f086c4020575f57806aab80862f85cea22166fc7f30cc2acce45434298570a44">
+      <rect l="37.6888885" t="528.450928" r="809.688904" b="984.564209" />
+    </object>
+  </floatingObjectList>
+  <bodyText id="2b41f4d0-c50b-11f1-a722-1bc5ffa5b6e5">
+    <object type="textBox" id="2b41f4d0-c50b-11f1-a722-1bc5ffa5b6e5" hash="02a3878876cefc9996ac43546840c204382c27ec1001d30b92aedc12c5c2cb5b" formatVersion="4000" rotatable="True" selectable="True" movable="True" flippable="True" visible="True" isReplayable="True" clippable="True" isTemplateObject="False" timeStamp="0" resizable="0" haveBeenToAtt="True" lockState="False" createdTime="0" modifiedTime="1791678800776354" removable="True" isHorizontalFlipped="False" isVerticalFlipped="False" isHintTextVisible="False" isTextReadOnly="False" isTextEditable="True" isTransparency="False" shapeType="4" originalDegree="0" leftMargin="16" topMargin="10" rightMargin="16" bottomMargin="10" textGravity="0" ellipsisType="2">
+      <rect l="0" t="0" r="0" b="0" />
+      <lineColorEffect colorType="2" gradientRotatable="False" solidColor="-16777216" gradientType="0" angle="0">
+        <radialGradientPosition x="0" y="0" />
+      </lineColorEffect>
+      <lineStyleEffect width="0" compoundType="0" dashType="0" capType="0" joinType="0" beginArrowType="0" beginArrowSize="0" endArrowType="0" endArrowSize="0" />
+      <originalRect l="0" t="0" r="0" b="0" />
+      <spanOrderDataList>
+        <spanOrderData val="MSwwLDIsMSwtMTQzNDI4NzU=" />
+        <spanOrderData val="MTcsMCwyLDEsMA==" />
+        <spanOrderData val="MywwLDIsMSwxMg==" />
+      </spanOrderDataList>
+      <text>PD9hICdzcGFuL2ZvcmVncm91bmRDb2xvcic9JzEsLTE0MzQyODc1JyAnc3Bhbi9iYWNrZ3JvdW5kQ29sb3InPScxLDAnICdzcGFuL2ZvbnRTaXplJz0nMSwxMicgJ29iamVjdFNwYW4vb2JqZWN0U3Bhbic9JzRhM2RlYjc4LWM1MGItMTFmMS1hMzM1LThmMWY4NWVjNzYzMiwwLDAnICdwYXJhZ3JhcGgvYWxpZ25tZW50Jz0nMCcgJ3BhcmFncmFwaC9wYXJzaW5nU3RhdGUnPSdGYWxzZScgJ3NlY3Rpb25EYXRhL3NlY3Rpb25EYXRhJz0nMic/Pjc3Kzg8P2EgJ29iamVjdFNwYW4vb2JqZWN0U3BhbicgJ29iamVjdFNwYW4vb2JqZWN0U3Bhbic9JzViYTYzNTVhLWM1MGItMTFmMS1iNDMyLWY3ZmFmMDdmMzRjYywwLDAnPz43Nys4PD9hICdzcGFuL2ZvcmVncm91bmRDb2xvcicgJ3NwYW4vYmFja2dyb3VuZENvbG9yJyAnc3Bhbi9mb250U2l6ZScgJ29iamVjdFNwYW4vb2JqZWN0U3BhbicgJ3BhcmFncmFwaC9hbGlnbm1lbnQnICdwYXJhZ3JhcGgvcGFyc2luZ1N0YXRlJyAnc2VjdGlvbkRhdGEvc2VjdGlvbkRhdGEnPz48P2EgJ3NlY3Rpb25EYXRhL3NlY3Rpb25EYXRhJz0nMCcgJ3NlY3Rpb25EYXRhL3NlY3Rpb25EYXRhJz8+</text>
+    </object>
+  </bodyText>
+</NoteResource>
+--kgmbsjjcad--

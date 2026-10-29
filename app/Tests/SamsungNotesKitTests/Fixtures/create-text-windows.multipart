@@ -1,0 +1,60 @@
+--jbnoyqygug
+Content-Type: application/xml; charset=utf-8
+Content-Disposition: form-data; name=noteResource
+
+<NoteResource id="33bc375e-87e3-4943-9b07-8b77fccfbd3a" syncModifiedTime="1791678531832" createdTime="1791678531600208" isLocked="False" isEncrypted="False" ownerId="" xmlVer="2">
+  <noteTree ver="4000">
+    <pageList>
+      <page id="b76e49f0-c50a-11f1-babe-770aaebba898" t="1791678531543364" h="2fc2e7adcadfa15c4c1886d18eeeff3dec6f2a153f6873b960addaebfe8ebcc1">
+        <layerList>
+          <layer id="b76e4ab8-c50a-11f1-ab34-fff9a077e352" t="1791678531543168" h="97485813c5d1964ddb0290a6d0a7960fdbaf6adfa8a695006f31227ddb71d2db" />
+        </layerList>
+      </page>
+      <page id="b76e526a-c50a-11f1-9ee5-63cfc7e08c6a" t="1791678531559812" h="eb0f13b8678bac7a6490864244ace73fc0d2a1f17d2f6581216afa0ea71de0aa">
+        <layerList>
+          <layer id="b76e5292-c50a-11f1-9fcd-6f1c7e6b76a2" t="1791678531559706" h="4b5540e08f9df8efa2255a512992610ea375cae28d05b59443965681a1b37e28" />
+        </layerList>
+      </page>
+    </pageList>
+    <bodyText id="b761ee8a-c50a-11f1-ad94-aba0996486e4" t="1791678531618675" h="21e2b8156985ccbe2e3b1b022030cfca72934ed4daea2249b9b6f49b411f3615" />
+  </noteTree>
+  <attributes isBgColorInverted="True" tapeVisibility="True" formatVersion="4000" fileRevision="1" modifiedTime="1791678531600208" editTime="0" width="848" height="2408" pageHorizontalPadding="0" pageVerticalPadding="8" pageDefaultWidth="848" pageDefaultHeight="1200" minFormatVersion="4000" editableFormatVersion="4000" lastEditedPageIndex="0" lastEditedPageImageId="-1" lastEditedPageTime="0" bodyTextFontSizeDelta="0" orientation="0" pageMode="0" documentType="0" ownerId="" lastRecognizedDataModifiedTime="0" fixedFont="" fixedTextDirection="2" fixedBackgroundTheme="2" isFavorite="False" state="normal" bookmark="[]" mappedUuid="" mappedAt="0" isConverted="False" displayCreatedTime="1791678531832" displayModifiedTime="1791678531832" msSyncAccountId="" msSyncDocumentId="" msLastSyncTime="0">
+    <title>
+      <object type="textBox" id="b761e3b8-c50a-11f1-8f6d-dbd83833b3eb" hash="3f3d1aa4e2560e5d5dbb06164d3278b1f1a1538bcc0925497c9a8c33537a5ab2" formatVersion="4000" rotatable="True" selectable="True" movable="True" flippable="True" visible="True" isReplayable="True" clippable="True" isTemplateObject="False" timeStamp="0" resizable="0" haveBeenToAtt="True" lockState="False" createdTime="0" modifiedTime="1791678531601068" removable="True" isHorizontalFlipped="False" isVerticalFlipped="False" isHintTextVisible="False" isTextReadOnly="False" isTextEditable="True" isTransparency="False" shapeType="4" originalDegree="0" leftMargin="11.25" topMargin="0" rightMargin="11.25" bottomMargin="0" textGravity="0" ellipsisType="2">
+        <rect l="0" t="0" r="0" b="0" />
+        <lineColorEffect colorType="2" gradientRotatable="False" solidColor="-16777216" gradientType="0" angle="0">
+          <radialGradientPosition x="0" y="0" />
+        </lineColorEffect>
+        <lineStyleEffect width="0" compoundType="0" dashType="0" capType="0" joinType="0" beginArrowType="0" beginArrowSize="0" endArrowType="0" endArrowSize="0" />
+        <originalRect l="0" t="0" r="0" b="0" />
+        <spanOrderDataList>
+          <spanOrderData val="MSwwLDEyLDEsLTE0MzQyODc1" />
+        </spanOrderDataList>
+        <text>PD9hICdzcGFuL2ZvcmVncm91bmRDb2xvcic9JzEsLTE0MzQyODc1JyAncGFyYWdyYXBoL3BhcnNpbmdTdGF0ZSc9J0ZhbHNlJz8+U0dWc2JHOGdkMjl5YkdRaDw/YSAnc3Bhbi9mb3JlZ3JvdW5kQ29sb3InICdwYXJhZ3JhcGgvcGFyc2luZ1N0YXRlJz8+</text>
+      </object>
+    </title>
+  </attributes>
+  <pageList>
+    <page id="b76e49f0-c50a-11f1-babe-770aaebba898" hash="2fc2e7adcadfa15c4c1886d18eeeff3dec6f2a153f6873b960addaebfe8ebcc1" isTextOnly="False" orientation="0" width="848" height="1200" offsetX="0" offsetY="0" formatVersion="4000" bgImageMode="2" bgColor="-197380" bgWidth="848" minFormatVersion="4000" editableFormatVersion="4000" currentLayerIndex="0" createdTime="0" modifiedTime="1791678531543364">
+      <layerList>
+        <layer id="b76e4ab8-c50a-11f1-ab34-fff9a077e352" hash="97485813c5d1964ddb0290a6d0a7960fdbaf6adfa8a695006f31227ddb71d2db" flagEventForwardable="True" visible="True" lockState="False" layerNumber="0" createdTime="0" modifiedTime="1791678531543168" thumbnail="-1" />
+      </layerList>
+    </page>
+    <page id="b76e526a-c50a-11f1-9ee5-63cfc7e08c6a" hash="eb0f13b8678bac7a6490864244ace73fc0d2a1f17d2f6581216afa0ea71de0aa" isTextOnly="False" orientation="0" width="848" height="1200" offsetX="0" offsetY="0" formatVersion="4000" bgImageMode="2" bgColor="-197380" bgWidth="848" minFormatVersion="4000" editableFormatVersion="4000" currentLayerIndex="0" createdTime="0" modifiedTime="1791678531559812">
+      <layerList>
+        <layer id="b76e5292-c50a-11f1-9fcd-6f1c7e6b76a2" hash="4b5540e08f9df8efa2255a512992610ea375cae28d05b59443965681a1b37e28" flagEventForwardable="True" visible="True" lockState="False" layerNumber="0" createdTime="0" modifiedTime="1791678531559706" thumbnail="-1" />
+      </layerList>
+    </page>
+  </pageList>
+  <bodyText id="b761ee8a-c50a-11f1-ad94-aba0996486e4">
+    <object type="textBox" id="b761ee8a-c50a-11f1-ad94-aba0996486e4" hash="21e2b8156985ccbe2e3b1b022030cfca72934ed4daea2249b9b6f49b411f3615" formatVersion="4000" rotatable="True" selectable="True" movable="True" flippable="True" visible="True" isReplayable="True" clippable="True" isTemplateObject="False" timeStamp="0" resizable="0" haveBeenToAtt="True" lockState="False" createdTime="0" modifiedTime="1791678531618675" removable="True" isHorizontalFlipped="False" isVerticalFlipped="False" isHintTextVisible="False" isTextReadOnly="False" isTextEditable="True" isTransparency="False" shapeType="4" originalDegree="0" leftMargin="16" topMargin="10" rightMargin="16" bottomMargin="10" textGravity="0" ellipsisType="2">
+      <rect l="0" t="0" r="0" b="0" />
+      <lineColorEffect colorType="2" gradientRotatable="False" solidColor="-16777216" gradientType="0" angle="0">
+        <radialGradientPosition x="0" y="0" />
+      </lineColorEffect>
+      <lineStyleEffect width="0" compoundType="0" dashType="0" capType="0" joinType="0" beginArrowType="0" beginArrowSize="0" endArrowType="0" endArrowSize="0" />
+      <originalRect l="0" t="0" r="0" b="0" />
+    </object>
+  </bodyText>
+</NoteResource>
+--jbnoyqygug--

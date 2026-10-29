@@ -1,0 +1,28 @@
+# Private: captured traffic, the user's own notes, Samsung's files, and the research notes.
+captures/
+corpus/
+protocol/
+tools/*
+!tools/icon/
+AUDIT.md
+PLAN.md
+TODO.md
+app/Screens/
+
+# Build products and local state.
+app/.build/
+app/build/
+.build/
+.swiftpm/
+app/.swiftpm/
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.DS_Store
+__pycache__/
+*.apk
+*.pcap
+*.pcapng
+
+# The Apple developer team that signs local builds (see app/xcode-build.sh).
+app/Xcode/team.local
